@@ -59,7 +59,6 @@ function validate_vcard()
 -->
 </script>
 {/literal}
-
     <form name="EditView" method="POST" ENCTYPE="multipart/form-data" action="index.php">
         <input type="hidden" name="max_file_size" value="30000">
         <input type='hidden' name='action' value='ImportVCardSave'>

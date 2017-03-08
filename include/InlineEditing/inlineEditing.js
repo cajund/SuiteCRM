@@ -68,7 +68,6 @@ function buildEditField(){
             if (typeof clicks == 'undefined') {
                 clicks = 0;
             }
-
             // Fix for Issue #3148, force it so clicks is only ever = 1 when clicked, never higher.
             if (clicks == 0) {
                 clicks++;
