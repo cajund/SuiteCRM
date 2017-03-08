@@ -51,6 +51,11 @@ $subpanel_layout = array(
 
 
     'list_fields'=> array(
+    	'account_name' => array(
+            'vname' => 'LBL_ACCOUNT_NAME',
+            'width' => '35%',
+            'sortable' => true,
+    	),
     	'first_name' => array(
 		 	'usage' => 'query_only',
     	),
@@ -60,12 +65,12 @@ $subpanel_layout = array(
         'full_name'=>array(
 		 	'vname' => 'LBL_LIST_NAME',
 			'widget_class' => 'SubPanelDetailViewLink',
-			'width' => '40%',
+			'width' => '15%',
             'sort_by' => 'last_name',
 		),
 		'title'=>array(
 		 	'vname' => 'LBL_LIST_TITLE',
-			'width' => '25%',
+			'width' => '15%',
 		),
 		'email1'=>array(
 		 	'vname' => 'LBL_LIST_EMAIL_ADDRESS',

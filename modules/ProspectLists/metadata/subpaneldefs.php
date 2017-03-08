@@ -44,7 +44,7 @@ $layout_defs['ProspectLists'] = array(
     'subpanel_setup' => array(
         'prospects' => array(
             'order' => 10,
-            'sort_by' => 'last_name',
+            'sort_by' => 'account_name',
             'sort_order' => 'asc',
             'module' => 'Prospects',
             'subpanel_name' => 'default',
@@ -56,7 +56,7 @@ $layout_defs['ProspectLists'] = array(
             ),
         ),
         'contacts' => array(
-            'order' => 20,
+            'order' => 40,
             'module' => 'Contacts',
             'sort_by' => 'last_name, first_name',
             'sort_order' => 'asc',
@@ -69,7 +69,7 @@ $layout_defs['ProspectLists'] = array(
             ),
         ),
         'leads' => array(
-            'order' => 30,
+            'order' => 20,
             'module' => 'Leads',
             'sort_by' => 'last_name, first_name',
             'sort_order' => 'asc',
@@ -81,20 +81,20 @@ $layout_defs['ProspectLists'] = array(
                 array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
             ),
         ),
-        'users' => array(
-            'order' => 40,
-            'module' => 'Users',
-            'sort_by' => 'name',
-            'sort_order' => 'asc',
-            'subpanel_name' => 'ForProspectLists',
-            'get_subpanel_data' => 'users',
-            'title_key' => 'LBL_USERS_SUBPANEL_TITLE',
-            'top_buttons' => array(
-                array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
-            ),
-        ),
+//        'users' => array(
+//            'order' => 40,
+//            'module' => 'Users',
+//            'sort_by' => 'name',
+//            'sort_order' => 'asc',
+//            'subpanel_name' => 'ForProspectLists',
+//            'get_subpanel_data' => 'users',
+//            'title_key' => 'LBL_USERS_SUBPANEL_TITLE',
+//            'top_buttons' => array(
+//                array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
+//            ),
+//        ),
         'accounts' => array(
-            'order' => 40,
+            'order' => 30,
             'module' => 'Accounts',
             'sort_order' => 'asc',
             'sort_by' => 'name',
@@ -107,18 +107,18 @@ $layout_defs['ProspectLists'] = array(
                 array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
             ),
         ),
-        'securitygroups' => array(
-            'top_buttons' => array(array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => 'SecurityGroups', 'mode' => 'MultiSelect'),),
-            'order' => 900,
-            'sort_by' => 'name',
-            'sort_order' => 'asc',
-            'module' => 'SecurityGroups',
-            'refresh_page' => 1,
-            'subpanel_name' => 'default',
-            'get_subpanel_data' => 'SecurityGroups',
-            'add_subpanel_data' => 'securitygroup_id',
-            'title_key' => 'LBL_SECURITYGROUPS_SUBPANEL_TITLE',
-        ),
+//        'securitygroups' => array(
+//            'top_buttons' => array(array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => 'SecurityGroups', 'mode' => 'MultiSelect'),),
+//            'order' => 900,
+//            'sort_by' => 'name',
+//            'sort_order' => 'asc',
+//            'module' => 'SecurityGroups',
+//            'refresh_page' => 1,
+//            'subpanel_name' => 'default',
+//            'get_subpanel_data' => 'SecurityGroups',
+//            'add_subpanel_data' => 'securitygroup_id',
+//            'title_key' => 'LBL_SECURITYGROUPS_SUBPANEL_TITLE',
+//        ),
     ),
 );
 ?>
