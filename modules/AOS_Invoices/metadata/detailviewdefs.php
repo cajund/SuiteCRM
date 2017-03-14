@@ -29,7 +29,7 @@ array (
           ),
           7 =>
           array (
-            'customCode' => '<input type="button" class="button" onClick="alert(\'Clicked: {$id} \');" value="{$MOD.LBL_SEND_TO_WAVE}">',
+            'customCode' => '<input type="button" class="button" onClick="sendToWave(\'{$id}\',\''.session_id().'\');" value="{$MOD.LBL_SEND_TO_WAVE}">',
           ),
         ),
       ),
@@ -69,6 +69,12 @@ array (
         array (
           'newTab' => true,
           'panelDefault' => 'expanded',
+        ),
+      ),
+      'includes' =>
+      array(
+        array(
+          'file' => 'custom/service/v4_1_custom/js/wave.js',
         ),
       ),
     ),
